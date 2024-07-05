@@ -104,14 +104,7 @@ local function setup_ruby_configuration(dap)
 		return vim.tbl_extend("force", run_config, config)
 	end
 	dap.configurations.ruby = {
-		extend_run_config({ name = "run rails", command = "bundle", args = { "exec", "rails", "s" } }),
 		extend_run_config({ name = "debug current file", command = "ruby", args = { "-rdebug" }, current_file = true }),
-		extend_run_config({ name = "run rspec current file", command = "bundle", args = { "exec", "rspec" }, current_file = true }),
-		extend_run_config({ name = "run rspec current_file:current_line", command = "bundle", args = { "exec", "rspec" }, current_line = true }),
-		extend_run_config({ name = "run rspec", command = "bundle", args = { "exec", "rspec" } }),
-		extend_run_config({ name = "bin/dev", command = "bin/dev" }),
-		extend_base_config({ name = "attach existing (port 38698)", port = 38698, waiting = 0 }),
-		extend_base_config({ name = "attach existing (pick port)", waiting = 0 }),
 	}
 end
 
