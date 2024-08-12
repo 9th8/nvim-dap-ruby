@@ -1,6 +1,7 @@
 # nvim-dap-ruby
 
 An extension for [nvim-dap](https://github.com/mfussenegger/nvim-dap) providing configurations for launching [debug.rb](https://github.com/ruby/debug).
+Fork of suketa/nvim-dap-ruby with only one "debug current file" action available.
 
 ## :zap: Requirements
 
@@ -17,7 +18,7 @@ Lazy.nvim:
 {
   "mfussenegger/nvim-dap",
   dependencies = {
-    "suketa/nvim-dap-ruby"
+    "9th8/nvim-dap-ruby"
   },
   config = function()
     require("dap-ruby").setup()
@@ -29,7 +30,7 @@ Vim-plug:
 
 ```
 Plug 'mfussenegger/nvim-dap'
-Plug 'suketa/nvim-dap-ruby'
+Plug '9th8/nvim-dap-ruby'
 ```
 
 ## :rocket: Usage
